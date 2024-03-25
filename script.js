@@ -3,6 +3,8 @@ import {
   annotationGroup,
 } from "https://unpkg.com/rough-notation?module";
 
+import { secToken } from "./config.js";
+
 setTimeout(() => {
   const a1 = annotate(document.getElementById("name"), {
     type: "highlight",
@@ -149,7 +151,7 @@ function sendEmail() {
   const bodyMessage = `Full Name: ${fullName.value} <br> Email: ${email.value} <br> Phone: ${phone.value} <br> Subject: ${subject.value} <br> Message: ${message.value}`;
 
   Email.send({
-    SecureToken:"942cc080-4035-43c2-a4da-4ad5b305ea85",
+    SecureToken: `${secToken}`,
     To: "hello@rosieduffy.com",
     From: "hello@rosieduffy.com",
     Subject: subject.value,
