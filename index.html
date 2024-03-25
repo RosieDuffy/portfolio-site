@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -110,61 +111,45 @@
             I'm <span id="name">Rosie.</span>
           </h1>
           <h2 class="h2-fs title-font margin0">
-            <span id="job">Junior Web <br>Developer.</span>
+            <span id="job">Junior Web <br />Developer.</span>
           </h2>
         </div>
       </div>
     </section>
     <section class="about">
       <div class="container">
-        <div class="about-text">
-          <h2 class="scroll-reveal h2-fs title-font margin0">About</h2>
-          <div id="trigger">
-            <div id="reveal">
-              <p class="p-fs">
-                Hey there, I'm Rosie, a self-taught
-                <span id="about-job-title">front-end web developer</span> with a
-                genuine passion for making websites both visually appealing and
-                user-friendly.
-                <!-- I'm currently looking for a new role and am available for freelance
+        <div class="about-container">
+          <div class="about-text">
+            <h2 class="scroll-reveal h3-fs title-font margin0">About</h2>
+            <div id="trigger">
+              <div id="reveal">
+                <p class="p-fs">
+                  Hey there, I'm Rosie, a self-taught
+                  <span id="about-job-title">front-end web developer</span> with
+                  a genuine passion for making websites both visually appealing
+                  and user-friendly.
+                  <!-- I'm currently looking for a new role and am available for freelance
             work. I'd love to hear from you! -->
-              </p>
-              <p class="p-fs">
-                I've been learning the ropes of
-                <span id="js">JavaScript</span>, <span id="html">HTML</span>,
-                and <span id="css">CSS</span>, and have dipped my toes into
-                <span id="full-stack">full-stack JavaScript</span> through a
-                comprehensive course.
-              </p>
-              <p class="p-fs">
-                On my journey, I have found joy in the creative process of
-                design and ensuring that websites not only look inviting but are
-                also easy to navigate.
-              </p>
+                </p>
+                <p class="p-fs">
+                  I've been learning the ropes of
+                  <span id="js">JavaScript</span>, <span id="html">HTML</span>,
+                  and <span id="css">CSS</span>, and have dipped my toes into
+                  <span id="full-stack">full-stack JavaScript</span> through a
+                  comprehensive course.
+                </p>
+                <p class="p-fs">
+                  On my journey, I have found joy in the creative process of
+                  design and ensuring that websites not only look inviting but
+                  are also easy to navigate.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="about-skills flex justify-center align-center">
-          <div class="skills-list">
-            <ul class="skills-ul">
-              <li class="scroll-reveal h4-fs title-font margin0">Skills</li>
-              <li class="scroll-reveal skills-li">- HTML</li>
-              <li class="scroll-reveal skills-li">- CSS</li>
-              <li class="scroll-reveal skills-li">- JavaScript</li>
-              <li class="scroll-reveal skills-li">- React</li>
-              <li class="scroll-reveal skills-li">- Node.js</li>
-              <li class="scroll-reveal skills-li">- Express</li>
-              <li class="scroll-reveal skills-li">- Git</li>
-              <li class="scroll-reveal skills-li">- GitHub</li>
-              <li class="scroll-reveal skills-li">- VS Code</li>
-              <li class="scroll-reveal skills-li">- Photoshop</li>
-            </ul>
           </div>
           <div class="skills-logos">
             <img class="logo-box" src="images/js.svg" alt="Javascript Logo" />
             <img class="logo-box" src="images/html-5.svg" alt="HTML logo" />
-            <img class="logo-box" src="images/css-3.svg" alt="CSS Logo" />
+            <img class="logo-box" src="images/css-3.svg" alt="CSS logo" />
             <img class="logo-box" src="images/react.svg" alt="React logo" />
             <img
               class="logo-box"
@@ -173,47 +158,309 @@
             />
             <img class="logo-box" src="images/sql-server.svg" alt="SQL logo" />
             <img class="logo-box" src="images/api.svg" alt="API image" />
+            <img class="logo-box" src="images/github.svg" alt="GitHub logo" />
+          </div>
+        </div>
+        <div class="about-skills">
+          <div class="skills-list scroll-reveal">
+            <h4 class="skills-title title-font h4-fs margin0">Skills</h4>
+            <p>
+              HTML, CSS, Javascript, React<span id="dots">......</span
+              ><span id="more"
+                >, Node.js, Express, Git, GitHub, VS Code, Photoshop</span
+              >
+              <span id="read-more"> Read more</span>
+            </p>
+            <!-- <button id="myBtn">Read More</button> -->
           </div>
         </div>
       </div>
     </section>
     <section class="projects">
       <div class="container">
-        <h2 class="h2-fs title-font scroll-reveal">Projects</h2>
+        <h2 class="h3-fs title-font scroll-reveal">Projects</h2>
         <div class="project-wrapper">
-          <div class="project box-shadow scroll-reveal">
-            <img class="box-shadow" src="https://picsum.photos/800" alt="" />
-            <div class="project-text">
-              <h3 class="h4-fs title-font">Project 1</h3>
+          <div class="project scroll-reveal box-shadow">
+            <video controls loop>
+              <source
+                src="images/pizza-school-screen-record 4.mp4"
+                type="video/mp4"
+              />
+
+              Your browser does not support the video tag.
+            </video>
+            <div class="project-info">
+              <div class="project-title">
+                <h3 class="h4-fs">Fairtown Pizza School</h3>
+                <h4 class="h5-fs">React, JavaScript, HTML, CSS</h4>
+              </div>
+
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Homepage for a fictional pizza school. Users can find
+                information on the school, it's teachers, courses and contact
+                details along with a form to book a place. <br /><br />
+                Although I am not a designer first and foremost, I wanted to
+                build a site from scratch using React that was visually
+                impactful, hopefully representing the fun and creativity of the
+                cookery school. <br /><br />
+                Some features I practiced and learnt along the way were modal
+                windows, form validation and responsive design.
               </p>
+
+              <div class="project-links">
+                <a
+                  href="https://rosieduffy.github.io/fairtown-pizza-school/"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-window-maximize fa-xl"></i>
+                    <p>Live Site</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/RosieDuffy/fairtown-pizza-school"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-brands fa-github fa-xl"></i>
+                    <p>GitHub</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="project box-shadow scroll-reveal">
-            <img class="box-shadow" src="https://picsum.photos/800" alt="" />
-            <div class="project-text">
-              <h3 class="h4-fs title-font">Project 2</h3>
+          <div class="project scroll-reveal box-shadow">
+            <video controls loop>
+              <source
+                src="images/where-can-i-watch-screen-record.mp4"
+                type="video/mp4"
+              />
+
+              Your browser does not support the video tag.
+            </video>
+            <div class="project-info">
+              <div class="project-title">
+                <h3 class="h4-fs">Where Can I Watch....?</h3>
+                <h4 class="h5-fs">React, JavaScript, HTML, CSS, APIs</h4>
+              </div>
+
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A site for users to find where they can stream their favourite
+                movies. Users enter a title and their country and an API returns
+                a list of movies, once one is selected a modal window pops up
+                with a list of links to streaming services available in their
+                country.
+                <br /><br />
+                Two separate APIs were needed to get the information I needed
+                and it was a great learning experience to use them both in
+                tandem. I also started to experiment with animations and
+                transitions to make the site more engaging. You can see how I
+                expanded on this in my next project.....this portfolio!
               </p>
+
+              <div class="project-links">
+                <a
+                  href="https://rosieduffy.github.io/streaming-availability/"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-window-maximize fa-xl"></i>
+                    <p>Live Site</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/RosieDuffy/streaming-availability"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-brands fa-github fa-xl"></i>
+                    <p>GitHub</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="project box-shadow scroll-reveal">
-            <img class="box-shadow" src="https://picsum.photos/800" alt="" />
-            <div class="project-text">
-              <h3 class="h4-fs title-font">Project 3</h3>
+          <div class="project scroll-reveal box-shadow">
+            <video controls loop>
+              <source
+                src="images/guess-the-movie-screen-record.mp4"
+                type="video/mp4"
+              />
+
+              Your browser does not support the video tag.
+            </video>
+            <div class="project-info">
+              <div class="project-title">
+                <h3 class="h4-fs">Guess the Movie Quote</h3>
+                <h4 class="h5-fs">JavaScript, HTML, CSS</h4>
+              </div>
+
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A simple game app where users guess the famous movie quote.
+                There are several quotes to choose from and the user loses a
+                point for each incorrect guess. Lose all 5 lives and it's game
+                over! <br /><br />
+                This was a fun project to build and I learnt a lot about DOM
+                manipulation and event listeners.<br />
+                This project was also part of a course I completed with
+                Treehouse.
               </p>
+
+              <div class="project-links">
+                <a
+                  href="https://rosieduffy.github.io/oop-game-show-app/"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-window-maximize fa-xl"></i>
+                    <p>Live Site</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/RosieDuffy/oop-game-show-app"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-brands fa-github fa-xl"></i>
+                    <p>GitHub</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-reveal box-shadow">
+            <video controls loop>
+              <source
+                src="images/course-directory-screen-record.mp4"
+                type="video/mp4"
+              />
+
+              Your browser does not support the video tag.
+            </video>
+            <div class="project-info">
+              <div class="project-title">
+                <h3 class="h4-fs">Course Directory</h3>
+                <h4 class="h5-fs">
+                  Full Stack Project - React, REST API, SQL, Javascript, HTML,
+                  CSS
+                </h4>
+              </div>
+
+              <p>
+                This project was part of a full stack Javascript course I
+                completed with Treehouse. The site is a course directory where
+                users can view courses or sign up and log in to add, update and
+                delete courses of their own. The front end was built using React
+                and the back end was built using a REST API with SQL.
+                <br /><br />
+                I learnt a lot about the full stack process, including
+                authentication, validation, error handling and how to connect
+                the front and back end. Feel free to sign up and add a course of
+                your own! Or you can sign in with the following details:
+                <br /><br />
+                Email: johndoe@email.com Password: johnpassword
+              </p>
+
+              <div class="project-links">
+                <a
+                  href="https://full-stack-react-app-production-d6bd.up.railway.app/"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-solid fa-window-maximize fa-xl"></i>
+                    <p>Live Site</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/RosieDuffy/full-stack-react-app"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fa-brands fa-github fa-xl"></i>
+                    <p>GitHub</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="contact">
+      <div class="contact-wrapper">
+        <h2>Contact Me</h2>
+
+        <form action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="contact-name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text">Full Name can't be blank</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Email Address"
+                id="email"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text email">Email Address can't be blank</div>
+            </div>
+            
+          </div>
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phone"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text">Phone Number can't be blank</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text">Subject can't be blank</div>
+            </div>
+            
+          </div>
+          <div class="textarea-field field">
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              class="item"
+              autocomplete="off"
+            ></textarea>
+            <div class="error-text">Message can't be blank</div>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script
+      src="https://kit.fontawesome.com/48ce39a48c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
