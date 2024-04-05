@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville&family=Playfair+Display:wght@900&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -22,7 +22,31 @@
     <title>Rosie Duffy | Portfolio</title>
   </head>
   <body>
-    <section class="hero">
+    <header>
+      <nav  class="navbar">
+        <a href="#"
+          ><img src="images/rosie-logo.png" alt="" class="header-logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section id="hero" class="hero">
       <div class="hero-container container full-screen">
         <div class="hero-images">
           <div class="background-images">
@@ -116,17 +140,17 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about-container">
           <div class="about-text">
-            <h2 class="scroll-reveal h3-fs title-font margin0">About</h2>
+            <h2 id="about-title" class="scroll-reveal h3-fs">About</h2>
             <div id="trigger">
               <div id="reveal">
                 <p class="p-fs">
-                  Hey there, I'm Rosie, a self-taught
-                  <span id="about-job-title">front-end web developer</span> with
-                  a genuine passion for making websites both visually appealing
+                  Hey there, I'm Rosie, an aspiring
+                  <span id="about-job-title">junior front-end web developer</span> with
+                  a focus on making websites both visually appealing
                   and user-friendly.
                   <!-- I'm currently looking for a new role and am available for freelance
             work. I'd love to hear from you! -->
@@ -142,6 +166,9 @@
                   On my journey, I have found joy in the creative process of
                   design and ensuring that websites not only look inviting but
                   are also easy to navigate.
+                  </p>
+                  <p class="p-fs">
+                  I'm currently seeking new opportunities to contribute my skills and continue growing in the field of web development.
                 </p>
               </div>
             </div>
@@ -163,7 +190,7 @@
         </div>
         <div class="about-skills">
           <div class="skills-list scroll-reveal">
-            <h4 class="skills-title title-font h4-fs margin0">Skills</h4>
+            <h4 class="skills-title h4-fs margin0">Skills</h4>
             <p>
               HTML, CSS, Javascript, React<span id="dots">......</span
               ><span id="more"
@@ -176,9 +203,93 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="contact" id="contact">
+      <div class="contact-wrapper">
+        <form action="#" class="scroll-reveal">
+          <h2 id="contact-me" class="h3-fs">Contact Me</h2>
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="contact-name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text">Full Name can't be blank</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Email Address"
+                id="email"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text email">Email Address can't be blank</div>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phone"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text">Phone Number can't be blank</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-text">Subject can't be blank</div>
+            </div>
+          </div>
+          <div class="textarea-field field">
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              class="item"
+              autocomplete="off"
+            ></textarea>
+            <div class="error-text">Message can't be blank</div>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="direct-contact">
+          <p class="scroll-reveal">Email me directly: hello@rosieduffy.com</p>
+          <p class="scroll-reveal">
+            Take a look at my
+            <a href="images/Rosie-Duffy-CV.pdf" target="_blank" class="contact-link"
+              >CV</a
+            >
+          </p>
+          <p class="scroll-reveal">Check out my <a href="https://github.com/RosieDuffy" target="_blank" class="contact-link">GitHub</a></p>
+          <div id="trigger2">
+            <div id="reveal2">
+              <span id="but-first"
+                ><h3 class="scroll-reveal">
+                  But first, take a look at my projects below
+                </h3></span
+              >
+            </div>
+          </div>
+          <h2 class="arrow-down">&#8681;</h2>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
       <div class="container">
-        <h2 class="h3-fs title-font scroll-reveal">Projects</h2>
+        <h2 id="projects-title" class="h3-fs scroll-reveal">Projects</h2>
         <div class="project-wrapper">
           <div class="project scroll-reveal box-shadow">
             <video controls loop>
@@ -192,13 +303,20 @@
             <div class="project-info">
               <div class="project-title">
                 <h3 class="h4-fs">Fairtown Pizza School</h3>
-                <h4 class="h5-fs">React, JavaScript, HTML, CSS</h4>
+                <div id="trigger3">
+                  <div id="reveal3">
+                    <h4 id="project-skills1" class="h5-fs">
+                      React, JavaScript, HTML, CSS
+                    </h4>
+                  </div>
+                </div>
               </div>
 
               <p>
                 Homepage for a fictional pizza school. Users can find
                 information on the school, it's teachers, courses and contact
-                details along with a form to book a place. <br /><br />
+                details along with a form to book a place.
+                <br /><br />
                 Although I am not a designer first and foremost, I wanted to
                 build a site from scratch using React that was visually
                 impactful, hopefully representing the fun and creativity of the
@@ -241,7 +359,9 @@
             <div class="project-info">
               <div class="project-title">
                 <h3 class="h4-fs">Where Can I Watch....?</h3>
-                <h4 class="h5-fs">React, JavaScript, HTML, CSS, APIs</h4>
+                <h4 id="project-skills2" class="h5-fs">
+                  React, JavaScript, HTML, CSS, APIs
+                </h4>
               </div>
 
               <p>
@@ -292,7 +412,13 @@
             <div class="project-info">
               <div class="project-title">
                 <h3 class="h4-fs">Guess the Movie Quote</h3>
-                <h4 class="h5-fs">JavaScript, HTML, CSS</h4>
+                <div id="trigger4">
+                  <div id="reveal4">
+                    <h4 id="project-skills3" class="h5-fs">
+                      JavaScript, HTML, CSS
+                    </h4>
+                  </div>
+                </div>
               </div>
 
               <p>
@@ -328,7 +454,7 @@
               </div>
             </div>
           </div>
-          <div class="project scroll-reveal box-shadow">
+          <div class="project scroll-reveal box-shadow last-project">
             <video controls loop>
               <source
                 src="images/course-directory-screen-record.mp4"
@@ -340,7 +466,7 @@
             <div class="project-info">
               <div class="project-title">
                 <h3 class="h4-fs">Course Directory</h3>
-                <h4 class="h5-fs">
+                <h4 id="project-skills4" class="h5-fs">
                   Full Stack Project - React, REST API, SQL, Javascript, HTML,
                   CSS
                 </h4>
@@ -386,78 +512,16 @@
         </div>
       </div>
     </section>
-    <section class="contact">
-      <div class="contact-wrapper">
-        <h2>Contact Me</h2>
-
-        <form action="#">
-          <div class="input-box">
-            <div class="input-field field">
-              <input
-                type="text"
-                placeholder="Full Name"
-                id="contact-name"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-text">Full Name can't be blank</div>
-            </div>
-            <div class="input-field field">
-              <input
-                type="text"
-                placeholder="Email Address"
-                id="email"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-text email">Email Address can't be blank</div>
-            </div>
-            
-          </div>
-          <div class="input-box">
-            <div class="input-field field">
-              <input
-                type="text"
-                placeholder="Phone Number"
-                id="phone"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-text">Phone Number can't be blank</div>
-            </div>
-            <div class="input-field field">
-              <input
-                type="text"
-                placeholder="Subject"
-                id="subject"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-text">Subject can't be blank</div>
-            </div>
-            
-          </div>
-          <div class="textarea-field field">
-            <textarea
-              name=""
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-              class="item"
-              autocomplete="off"
-            ></textarea>
-            <div class="error-text">Message can't be blank</div>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-
+    <footer>
+      <p>
+        &copy; 2024 Rosie Duffy. All rights reserved. Designed and built by
+        Rosie Duffy.
+      </p>
+      <a href="#hero">&#8657; Back to top</a>
+    </footer>
     <script type="module" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script
       src="https://kit.fontawesome.com/48ce39a48c.js"
       crossorigin="anonymous"

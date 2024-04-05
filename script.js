@@ -5,6 +5,25 @@ import {
 
 import { secToken } from "./config.js";
 
+// HEADER ANIMATIONS //
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
+
+// ANNOTATION ANIMATIONS //
+
 setTimeout(() => {
   const a1 = annotate(document.getElementById("name"), {
     type: "highlight",
@@ -25,6 +44,15 @@ setTimeout(() => {
 
   agroup.show();
 }, 1700);
+
+const ae = annotate(document.getElementById("about-title"), {
+  type: "underline",
+  color: "red",
+  padding: 1,
+  multiline: true,
+  iterations: 2,
+  animationDuration: 600,
+});
 
 const a3 = annotate(document.getElementById("about-job-title"), {
   type: "underline",
@@ -65,7 +93,66 @@ const a7 = annotate(document.getElementById("full-stack"), {
   animationDuration: 600,
 });
 
-const aboutAGroup = annotationGroup([a3, a4, a5, a6, a7]);
+const aboutAGroup = annotationGroup([ae, a3, a4, a5, a6, a7]);
+
+const a8 = annotate(document.getElementById("but-first"), {
+  type: "highlight",
+  color: "red",
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const a9 = annotate(document.getElementById("contact-me"), {
+  type: "underline",
+  color: "red",
+  padding: -1,
+  multiline: true,
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const contactAGroup = annotationGroup([a8, a9]);
+
+const a10 = annotate(document.getElementById("projects-title"), {
+  type: "underline",
+  color: "red",
+  padding: -1,
+  multiline: true,
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const a11 = annotate(document.getElementById("project-skills1"), {
+  type: "highlight",
+  color: "red",
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const a12 = annotate(document.getElementById("project-skills2"), {
+  type: "highlight",
+  color: "red",
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const projectsAGroup1 = annotationGroup([a10, a11, a12]);
+
+const a13 = annotate(document.getElementById("project-skills3"), {
+  type: "highlight",
+  color: "red",
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const a14 = annotate(document.getElementById("project-skills4"), {
+  type: "highlight",
+  color: "red",
+  iterations: 2,
+  animationDuration: 600,
+});
+
+const projectsAGroup2 = annotationGroup([a13, a14]);
 
 var controller = new ScrollMagic.Controller();
 
@@ -91,6 +178,33 @@ new ScrollMagic.Scene({
   .setClassToggle("#reveal", "visible") // add class to reveal
   .addTo(controller);
 
+new ScrollMagic.Scene({
+  triggerElement: "#trigger2",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  offset: 10, // move trigger to center of element
+  reverse: false,
+})
+  .setClassToggle("#reveal2", "visible") // add class to reveal
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: "#trigger3",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  offset: 10, // move trigger to center of element
+  reverse: false,
+})
+  .setClassToggle("#reveal3", "visible") // add class to reveal
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  triggerElement: "#trigger4",
+  triggerHook: 0.9, // show, when scrolled 10% into view
+  offset: 10, // move trigger to center of element
+  reverse: false,
+})
+  .setClassToggle("#reveal4", "visible") // add class to reveal
+  .addTo(controller);
+
 const reveal = document.getElementById("reveal");
 
 // Create a new MutationObserver instance
@@ -110,8 +224,61 @@ let observer = new MutationObserver((mutations) => {
   });
 });
 
-// Start observing the class attribute of the reveal2 element
+const reveal2 = document.getElementById("reveal2");
+let observer2 = new MutationObserver((mutations) => {
+  // Loop over the mutations
+  mutations.forEach((mutation) => {
+    // If the class attribute has changed
+    if (mutation.attributeName === "class") {
+      // If the element has the 'visible' class
+      if (reveal2.classList.contains("visible")) {
+        // Call aboutAGroup.show()
+        setTimeout(() => {
+          contactAGroup.show();
+        }, 2000);
+      }
+    }
+  });
+});
+
+const reveal3 = document.getElementById("reveal3");
+let observer3 = new MutationObserver((mutations) => {
+  // Loop over the mutations
+  mutations.forEach((mutation) => {
+    // If the class attribute has changed
+    if (mutation.attributeName === "class") {
+      // If the element has the 'visible' class
+      if (reveal3.classList.contains("visible")) {
+        // Call aboutAGroup.show()
+        setTimeout(() => {
+          projectsAGroup1.show();
+        }, 1500);
+      }
+    }
+  });
+});
+
+const reveal4 = document.getElementById("reveal4");
+let observer4 = new MutationObserver((mutations) => {
+  // Loop over the mutations
+  mutations.forEach((mutation) => {
+    // If the class attribute has changed
+    if (mutation.attributeName === "class") {
+      // If the element has the 'visible' class
+      if (reveal4.classList.contains("visible")) {
+        // Call aboutAGroup.show()
+        setTimeout(() => {
+          projectsAGroup2.show();
+        }, 1500);
+      }
+    }
+  });
+});
+// Start observing the class attribute of the reveal element
 observer.observe(reveal, { attributes: true });
+observer2.observe(reveal2, { attributes: true });
+observer3.observe(reveal3, { attributes: true });
+observer4.observe(reveal4, { attributes: true });
 
 ScrollReveal().reveal(".scroll-reveal", {
   scale: 0.75,
