@@ -242,11 +242,21 @@ header a {
 /* HERO STYLES */
 
 .hero {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .pic {
   display: none;
+}
+
+.hero h1,
+h2 {
+  font-size: clamp(2.5rem, 1.0577rem + 6.1538vw, 8.75rem);
+}
+
+
+.hero h3 {
+  font-size: clamp(0.9375rem, 0rem + 4vw, 4rem);
 }
 
 .main-pic {
@@ -277,23 +287,20 @@ header a {
 
 @media only screen and (max-height: 800px) {
   .main-portrait-image {
-   
     width: 10rem;
-   
   }
 
   .hero::after {
-
-    bottom: -20vh;
-
+    bottom: -10vh;
   }
 }
 
 @media only screen and (min-width: 800px) {
   .hero-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+  
   }
 
   .main-pic {
@@ -301,7 +308,7 @@ header a {
   }
 
   .hero {
-    padding-bottom: 12rem;
+    padding-bottom: 10rem;
   }
   .hero-text {
     text-align: right;
@@ -312,7 +319,7 @@ header a {
   }
 
   .main-portrait-image {
-    width: 20rem;
+    width: 18rem;
     animation-delay: 1.2s;
   }
 
@@ -327,14 +334,15 @@ header a {
   }
 
   .camera-pic {
-    top: -8rem;
+    top: -2rem;
+    left: 2rem;
     transform: translateY(-200rem);
     animation: drop3 0.8s forwards;
   }
 
   .cliff-pic {
-    top: 20rem;
-    left: -1rem;
+    top: 16rem;
+    left: -3rem;
     transform: translateY(-200rem);
     animation: drop2 1s forwards;
     animation-delay: 0.5s;
@@ -356,7 +364,7 @@ header a {
 
 @media only screen and (min-width: 1260px) {
   .main-portrait-image {
-    width: 25rem;
+    width: 20rem;
   }
 
   .pic {
@@ -547,64 +555,64 @@ header a {
 
 @media only screen and (min-width: 800px) {
   .tache-right {
-    top: 10.5rem;
-    left: 12rem;
-    width: 3rem;
+    top: 9.5rem;
+    left: 11rem;
+    width: 2.5rem;
   }
 
   .tache-left {
-    top: 11rem;
-    left: 8rem;
-    width: 3rem;
+    top: 10rem;
+    left: 7.2rem;
+    width: 2.5rem;
   }
 
   .horn-right {
     top: 2rem;
-    left: 14rem;
-    width: 3rem;
+    left: 12rem;
+    width: 2.5rem;
   }
 
   .horn-left {
     top: 2.25rem;
     left: 5rem;
-    width: 3rem;
+    width: 2.5rem;
   }
 
   .glasses {
-    top: 7rem;
-    left: 7.75rem;
-    width: 7rem;
+    top: 6.75rem;
+    left: 7.25rem;
+    width: 6rem;
   }
 }
 
 @media only screen and (min-width: 1260px) {
   .tache-right {
-    top: 13rem;
-    left: 15rem;
-    width: 5rem;
+    top: 10.75rem;
+    left: 12rem;
+    width: 3rem;
   }
 
   .tache-left {
-    top: 13.5rem;
-    left: 9rem;
-    width: 5rem;
+    top: 11.25rem;
+    left: 7.75rem;
+    width: 3rem;
   }
 
   .horn-right {
-    left: 17rem;
-    width: 4rem;
+    left: 14rem;
+    width: 2.5rem;
   }
 
   .horn-left {
     top: 2.25rem;
-    left: 6.5rem;
-    width: 4rem;
+    left: 5.5rem;
+    width: 2.5rem;
   }
 
   .glasses {
-    top: 9rem;
-    left: 9.5rem;
-    width: 9rem;
+    top: 7.25rem;
+    left: 7.75rem;
+    width: 7rem;
   }
 }
 
@@ -662,7 +670,7 @@ header a {
   transform: skewY(-10deg);
 }
 
-@media only screen and (max-height: 800px){
+@media only screen and (max-height: 800px) {
   .about {
     margin-top: 1rem;
   }
@@ -691,7 +699,7 @@ header a {
   }
 
   .about::after {
-    bottom: -1050px;
+    bottom: -1000px;
   }
 
   .about-skills {
@@ -933,7 +941,7 @@ form button:hover {
   bottom: -1750px;
   height: 100px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.433), #0a242700);
-  transform: skewY(10deg);
+  transform: skewY(8deg);
 }
 
 .contact-link {
@@ -956,11 +964,10 @@ form button:hover {
   animation: float 4s ease-in-out infinite;
 }
 
-@media only screen and (max-height: 800px){
+@media only screen and (max-height: 800px) {
   .contact::after {
     bottom: -1850px;
   }
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -969,12 +976,15 @@ form button:hover {
     justify-content: space-around;
     align-items: center;
     margin: 10rem;
+    padding-top: 2rem;
+   
   }
 
   .contact-wrapper h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
+    
   }
 
   .contact-wrapper form {
@@ -1049,7 +1059,7 @@ form button:hover {
   }
 
   .contact::after {
-    bottom: -1950px;
+    bottom: -2000px;
   }
 }
 
@@ -1073,7 +1083,7 @@ form button:hover {
   }
 
   .contact::after {
-    bottom: -1675px;
+    bottom: -1725px;
   }
 }
 
@@ -1189,7 +1199,7 @@ form button:hover {
   }
 
   .projects h2 {
-    margin: 10rem 2rem 0 auto;
+    margin: 14rem 2rem 0 auto;
   }
 
   .project h3 {
