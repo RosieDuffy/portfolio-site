@@ -1151,7 +1151,7 @@ form button:hover {
 }
 
 .last-project {
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 @media only screen and (max-width: 410px) {
@@ -1228,8 +1228,8 @@ form button:hover {
 
 @media only screen and (min-width: 1300px) {
   .projects video {
-    width: 495px;
-    height: 280px;
+    width: 485px;
+    height: 275px;
   }
 
   .icon {
