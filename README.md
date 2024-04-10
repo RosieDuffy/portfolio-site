@@ -21,7 +21,7 @@ This project is a web application aimed at showcasing personal information, skil
 1. Clone the repository to your local machine: 
 
 ```
- git clone https://github.com/username/project-name.git
+ git clone https://github.com/RosieDuffy/portfolio-site.git
 ```
 
 2. Install dependencies: 
