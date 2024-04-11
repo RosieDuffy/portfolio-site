@@ -19,7 +19,7 @@
     --fs-l: 5rem;
     --fs-m: 3.5rem;
     --fs-s: 1.5rem;
-    --fs-xs: 1.2rem;
+    --fs-xs: 1.25rem;
   }
 }
 
@@ -30,7 +30,7 @@
     --fs-l: 6rem;
     --fs-m: 4rem;
     --fs-s: 1.5rem;
-    --fs-xs: 1.2rem;
+    --fs-xs: 1.25rem;
   }
 }
 
@@ -41,7 +41,7 @@
     --fs-l: 8rem;
     --fs-m: 4rem;
     --fs-s: 2rem;
-    --fs-xs: 1.5rem;
+    --fs-xs: 1.25rem;
   }
 }
 
@@ -52,7 +52,7 @@
     --fs-l: 8.5rem;
     --fs-m: 4rem;
     --fs-s: 2.5rem;
-    --fs-xs: 1.5rem;
+    --fs-xs: 1.25rem;
   }
 }
 
@@ -254,7 +254,6 @@ h2 {
   font-size: clamp(3.125rem, 1.8269rem + 5.5385vw, 8.75rem);
 }
 
-
 .hero h3 {
   font-size: clamp(1.875rem, 1.3846rem + 2.0923vw, 4rem);
 }
@@ -284,6 +283,11 @@ h2 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.433), #0a242700);
   transform: skewY(5deg);
 }
+@media only screen and (max-height: 590px){
+  .pic {
+    width: 45%;
+  }
+}
 
 @media only screen and (max-height: 800px) {
   .main-portrait-image {
@@ -295,12 +299,13 @@ h2 {
   }
 }
 
+
+
 @media only screen and (min-width: 800px) {
   .hero-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
   }
 
   .main-pic {
@@ -619,7 +624,7 @@ h2 {
 /* ABOUT STYLES */
 
 .about {
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
 }
 
 .about-text {
@@ -647,7 +652,10 @@ h2 {
 
 .skills-list {
   margin-top: 2rem;
+  width: 60%;
 }
+
+
 
 #more {
   display: none;
@@ -680,7 +688,9 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 611px) {
+
+
+@media only screen and (min-width: 650px) {
   .about::after {
     bottom: -650px;
   }
@@ -699,7 +709,7 @@ h2 {
   }
 
   .about::after {
-    bottom: -1000px;
+    bottom: -1050px;
   }
 
   .about-skills {
@@ -709,8 +719,8 @@ h2 {
 
   .skills-logos {
     margin-top: 5rem;
-    width: 30%;
-    gap: 5rem;
+    width: 40%;
+    gap: 2.5rem;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
@@ -718,6 +728,15 @@ h2 {
 
   .logo-box {
     width: 4rem;
+  }
+
+  .skills-list p{
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1074px){
+  .about::after {
+    bottom: -975px;
   }
 }
 
@@ -767,6 +786,12 @@ h2 {
   .logo-box:nth-child(8) {
     margin-top: -100px;
     animation: float 8s ease-in-out infinite;
+  }
+}
+
+@media only screen and (min-width: 1550px){
+  .about::after {
+    bottom: -900px;
   }
 }
 
@@ -964,6 +989,12 @@ form button:hover {
   animation: float 4s ease-in-out infinite;
 }
 
+.arrow-button {
+  color: var(--off-white-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-height: 800px) {
   .contact::after {
     bottom: -1850px;
@@ -975,16 +1006,14 @@ form button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10rem;
+    margin: 6rem;
     padding-top: 2rem;
-   
   }
 
   .contact-wrapper h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 10px;
-    
   }
 
   .contact-wrapper form {
@@ -1059,7 +1088,7 @@ form button:hover {
   }
 
   .contact::after {
-    bottom: -2000px;
+    bottom: -2100px;
   }
 }
 
@@ -1083,10 +1112,21 @@ form button:hover {
   }
 
   .contact::after {
-    bottom: -1725px;
+    bottom: -1800px;
   }
 }
 
+@media only screen and (min-width: 1090px){
+  .contact::after {
+    bottom: -1700px;
+  }
+}
+
+@media only screen and (min-width: 1550px){
+  .contact::after {
+    bottom: -1650px;
+  }
+}
 /* PROJECTS STYLES */
 
 .projects h2 {
