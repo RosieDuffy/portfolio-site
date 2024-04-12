@@ -672,7 +672,7 @@ h2 {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -750px;
+  bottom: -800px;
   height: 100px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.433), #0a242700);
   transform: skewY(-10deg);
@@ -963,7 +963,7 @@ form button:hover {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -1750px;
+  bottom: -1850px;
   height: 100px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.433), #0a242700);
   transform: skewY(8deg);
