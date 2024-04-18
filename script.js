@@ -287,6 +287,8 @@ ScrollReveal().reveal(".scroll-reveal", {
   easing: "ease-in-out",
 });
 
+// READ MORE //
+
 function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
