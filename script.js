@@ -158,64 +158,58 @@ var controller = new ScrollMagic.Controller();
 
 var revealElements = document.getElementsByClassName("logo-box");
 for (var i = 0; i < revealElements.length; i++) {
-  // create a scene for each element
   new ScrollMagic.Scene({
-    triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-    offset: 50, // start a little later
+    triggerElement: revealElements[i],
+    offset: 50,
     triggerHook: 0.9,
     reverse: false,
   })
-    .setClassToggle(revealElements[i], "visible") // add class toggle
+    .setClassToggle(revealElements[i], "visible")
     .addTo(controller);
 }
 
 new ScrollMagic.Scene({
   triggerElement: "#trigger",
-  triggerHook: 0.9, // show, when scrolled 10% into view
-  offset: 10, // move trigger to center of element
+  triggerHook: 0.9,
+  offset: 10,
   reverse: false,
 })
-  .setClassToggle("#reveal", "visible") // add class to reveal
+  .setClassToggle("#reveal", "visible")
   .addTo(controller);
 
 new ScrollMagic.Scene({
   triggerElement: "#trigger2",
-  triggerHook: 0.9, // show, when scrolled 10% into view
-  offset: 10, // move trigger to center of element
+  triggerHook: 0.9,
+  offset: 10,
   reverse: false,
 })
-  .setClassToggle("#reveal2", "visible") // add class to reveal
+  .setClassToggle("#reveal2", "visible")
   .addTo(controller);
 
 new ScrollMagic.Scene({
   triggerElement: "#trigger3",
-  triggerHook: 0.9, // show, when scrolled 10% into view
-  offset: 10, // move trigger to center of element
+  triggerHook: 0.9,
+  offset: 10,
   reverse: false,
 })
-  .setClassToggle("#reveal3", "visible") // add class to reveal
+  .setClassToggle("#reveal3", "visible")
   .addTo(controller);
 
 new ScrollMagic.Scene({
   triggerElement: "#trigger4",
-  triggerHook: 0.9, // show, when scrolled 10% into view
-  offset: 10, // move trigger to center of element
+  triggerHook: 0.9,
+  offset: 10,
   reverse: false,
 })
-  .setClassToggle("#reveal4", "visible") // add class to reveal
+  .setClassToggle("#reveal4", "visible")
   .addTo(controller);
 
 const reveal = document.getElementById("reveal");
 
-// Create a new MutationObserver instance
 let observer = new MutationObserver((mutations) => {
-  // Loop over the mutations
   mutations.forEach((mutation) => {
-    // If the class attribute has changed
     if (mutation.attributeName === "class") {
-      // If the element has the 'visible' class
       if (reveal.classList.contains("visible")) {
-        // Call aboutAGroup.show()
         setTimeout(() => {
           aboutAGroup.show();
         }, 2000);
@@ -226,13 +220,9 @@ let observer = new MutationObserver((mutations) => {
 
 const reveal2 = document.getElementById("reveal2");
 let observer2 = new MutationObserver((mutations) => {
-  // Loop over the mutations
   mutations.forEach((mutation) => {
-    // If the class attribute has changed
     if (mutation.attributeName === "class") {
-      // If the element has the 'visible' class
       if (reveal2.classList.contains("visible")) {
-        // Call aboutAGroup.show()
         setTimeout(() => {
           contactAGroup.show();
         }, 2000);
@@ -243,13 +233,9 @@ let observer2 = new MutationObserver((mutations) => {
 
 const reveal3 = document.getElementById("reveal3");
 let observer3 = new MutationObserver((mutations) => {
-  // Loop over the mutations
   mutations.forEach((mutation) => {
-    // If the class attribute has changed
     if (mutation.attributeName === "class") {
-      // If the element has the 'visible' class
       if (reveal3.classList.contains("visible")) {
-        // Call aboutAGroup.show()
         setTimeout(() => {
           projectsAGroup1.show();
         }, 1500);
@@ -260,13 +246,9 @@ let observer3 = new MutationObserver((mutations) => {
 
 const reveal4 = document.getElementById("reveal4");
 let observer4 = new MutationObserver((mutations) => {
-  // Loop over the mutations
   mutations.forEach((mutation) => {
-    // If the class attribute has changed
     if (mutation.attributeName === "class") {
-      // If the element has the 'visible' class
       if (reveal4.classList.contains("visible")) {
-        // Call aboutAGroup.show()
         setTimeout(() => {
           projectsAGroup2.show();
         }, 1500);
@@ -274,7 +256,7 @@ let observer4 = new MutationObserver((mutations) => {
     }
   });
 });
-// Start observing the class attribute of the reveal element
+
 observer.observe(reveal, { attributes: true });
 observer2.observe(reveal2, { attributes: true });
 observer3.observe(reveal3, { attributes: true });

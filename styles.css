@@ -283,7 +283,7 @@ h2 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.433), #0a242700);
   transform: skewY(5deg);
 }
-@media only screen and (max-height: 590px){
+@media only screen and (max-height: 590px) {
   .pic {
     width: 45%;
   }
@@ -298,8 +298,6 @@ h2 {
     bottom: -10vh;
   }
 }
-
-
 
 @media only screen and (min-width: 800px) {
   .hero-container {
@@ -351,7 +349,6 @@ h2 {
     transform: translateY(-200rem);
     animation: drop2 1s forwards;
     animation-delay: 0.5s;
-    /* margin-left: 3rem; */
   }
 
   .bike-pic {
@@ -623,10 +620,6 @@ h2 {
 
 /* ABOUT STYLES */
 
-.about {
-  /* margin-top: -3rem; */
-}
-
 .about-text {
   margin-bottom: 3rem;
 }
@@ -653,10 +646,7 @@ h2 {
 .skills-list {
   margin-top: 2rem;
   width: 60%;
-
 }
-
-
 
 #more {
   display: none;
@@ -688,8 +678,6 @@ h2 {
     bottom: -850px;
   }
 }
-
-
 
 @media only screen and (min-width: 650px) {
   .about::after {
@@ -731,11 +719,11 @@ h2 {
     width: 4rem;
   }
 
-  .skills-list p{
+  .skills-list p {
     width: 45%;
   }
 }
-@media only screen and (min-width: 1074px){
+@media only screen and (min-width: 1074px) {
   .about::after {
     bottom: -975px;
   }
@@ -790,7 +778,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 1550px){
+@media only screen and (min-width: 1550px) {
   .about::after {
     bottom: -900px;
   }
@@ -861,16 +849,11 @@ h2 {
 
 /* CONTACT STYLES */
 
-.contact {
-  /* margin-top: 15rem; */
-}
-
 .contact-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 10rem; */
 }
 
 .contact-wrapper h2 {
@@ -1117,15 +1100,30 @@ form button:hover {
   }
 }
 
-@media only screen and (min-width: 1090px){
+@media only screen and (min-width: 1090px) {
   .contact::after {
     bottom: -1700px;
   }
 }
 
-@media only screen and (min-width: 1550px){
+@media only screen and (min-width: 1550px) {
   .contact::after {
     bottom: -1650px;
+  }
+
+  .direct-contact p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-link {
+    background-color: var(--green-color);
+    color: var(--off-white-color);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0.4rem;
+    text-decoration: none;
+    border: 1px solid var(--off-white-color);
   }
 }
 /* PROJECTS STYLES */
@@ -1138,7 +1136,6 @@ form button:hover {
 
 .project-wrapper {
   margin-top: 15rem;
-  /* margin: 0 auto; */
 }
 
 .project {
