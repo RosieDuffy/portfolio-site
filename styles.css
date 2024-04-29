@@ -295,7 +295,7 @@ h2 {
   }
 
   .hero::after {
-    bottom: -10vh;
+    bottom: -15vh;
   }
 }
 
